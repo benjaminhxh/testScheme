@@ -44,7 +44,7 @@
     UIButton *schemeBtn = [[UIButton alloc] initWithFrame:CGRectMake(40, 60, 110, 30)];
     schemeBtn.backgroundColor = [UIColor blueColor];
     [schemeBtn setTitle:@"震动" forState:UIControlStateNormal];
-    [schemeBtn setTitle:@"刷新中" forState:UIControlStateHighlighted];
+//    [schemeBtn setTitle:@"刷新中" forState:UIControlStateHighlighted];
     [schemeBtn addTarget:self action:@selector(DidSchemAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:schemeBtn];
     
@@ -58,13 +58,13 @@
     testF.backgroundColor = [UIColor grayColor];
     [self.view addSubview:testF];
     
-    NSString *str1 = @"hi你好";
-    NSString *str1UTF8 = [str1 encodeChinese];
-    NSLog(@"str1UTF8:%@",str1UTF8);
-    
-    NSString *strWithUTF8=(__bridge NSString *)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)str1, NULL,  CFSTR(":/?#[]@!$ &'()*+,;=\"<>%{}|\\^~`"), CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
-
-    NSLog(@"strWithUtf8:%@",strWithUTF8);
+//    NSString *str1 = @"hi你好";
+//    NSString *str1UTF8 = [str1 encodeChinese];
+//    NSLog(@"str1UTF8:%@",str1UTF8);
+//    
+//    NSString *strWithUTF8=(__bridge NSString *)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)str1, NULL,  CFSTR(":/?#[]@!$ &'()*+,;=\"<>%{}|\\^~`"), CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
+//
+//    NSLog(@"strWithUtf8:%@",strWithUTF8);
 //    NSDate *datenow = [NSDate date];//现在时间,你可以输出来看下是什么格式
 //    NSLog(@"datemow:%@",datenow);
 //    NSLog(@"localeDate:%@",datenow);
